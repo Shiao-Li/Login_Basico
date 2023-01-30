@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class CalculadoraIMC_ES {
+public class CalculadoraIMC_ES {
 }

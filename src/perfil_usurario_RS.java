@@ -1,5 +1,6 @@
 import javax.swing.*;
 
-public class Perfil_usuario extends JFrame{
+public class perfil_usurario_RS extends JFrame{
     public JPanel perfil1;
+    private JButton calculadoraDeDivisasButton;
 }
