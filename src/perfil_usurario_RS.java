@@ -6,7 +6,10 @@ public class perfil_usurario_RS extends JFrame{
     public JPanel perfil1;
     private JButton calculadoraDeDivisasButton;
     private JButton calculadoraIMCButton;
-public perfil_usurario_RS() {
+    public JLabel UsuarioCorreo_RS;
+    private String Dato;
+
+    public perfil_usurario_RS() {
     calculadoraIMCButton.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -35,5 +38,11 @@ public perfil_usurario_RS() {
             frame1.setVisible(true);
         }
     });
+
 }
+    public void setDato(String Dato){
+        this.Dato = Dato;
+        UsuarioCorreo_RS.setText(Dato);
+    }
+
 }

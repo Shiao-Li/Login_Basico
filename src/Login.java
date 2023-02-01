@@ -18,27 +18,33 @@ public class Login extends JFrame{
                 String usuario = textField1. getText();
                 String contraseña = passwordField1.getText();
 
+
                 if (usuario.isEmpty() || contraseña.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Complete todos los campos");
                 }else {
                     if (usuario.equals("shiao22") || usuario.equals("roberto.shiao@epn.edu.ec") && contraseña.equals("shiao123")) {
 
                         JFrame frame2 = new JFrame("Perfil 1"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
-                        perfil_usurario_RS f2 = new perfil_usurario_RS();
+                        perfil_usurario_RS f1 = new perfil_usurario_RS();
+
+                        f1.setDato(textField1.getText());
 
                         frame2.setSize(200, 200);
-                        frame2.setContentPane(f2.perfil1);
+                        frame2.setContentPane(f1.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
                         frame2.setLocationRelativeTo(null);
                         frame2.setVisible(true);
                         dispose();
+
                     } else if (usuario.equals("erick12") || usuario.equals("erick.santillan@epn.edu.ec") && contraseña.equals("erik123")) {
                         JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario_ES f2 = new perfil_usuario_ES();
 
+                        f2.setDato(textField1.getText());
+
                         frame2.setSize(500, 500);
-                        frame2.setContentPane(f2.perfil_usurario_RS);
+                        frame2.setContentPane(f2.perfil2);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
                         frame2.setLocationRelativeTo(null);
