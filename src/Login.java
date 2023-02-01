@@ -26,7 +26,7 @@ public class Login extends JFrame{
                         JFrame frame2 = new JFrame("Perfil 1"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usurario_RS f2 = new perfil_usurario_RS();
 
-                        frame2.setSize(300, 300);
+                        frame2.setSize(200, 200);
                         frame2.setContentPane(f2.perfil1);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
@@ -37,7 +37,7 @@ public class Login extends JFrame{
                         JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario_ES f2 = new perfil_usuario_ES();
 
-                        frame2.setSize(300, 300);
+                        frame2.setSize(500, 500);
                         frame2.setContentPane(f2.perfil_usurario_RS);
                         frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame2.pack();
@@ -65,7 +65,7 @@ public class Login extends JFrame{
         frame1.setContentPane(f1.login);
         frame1.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame1.pack();
-        frame1.setSize(300, 300);
+        frame1.setSize(400, 400);
         frame1.setLocationRelativeTo(null);
         frame1.setVisible(true);
     }

@@ -1,22 +1,25 @@
-package IMC;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
-public class IG {
+public class calculadoraIMC_ES extends JFrame{
     private JLabel peso;
-    private JPanel p1;
+    public JPanel p1;
     private JTextField textField2;
     private JButton calcularButton;
     private JLabel Altura;
     private JTextField textField1;
+    private JMenu archivo;
+    private JMenuItem guardar;
+    private JMenuItem cerrar;
+    private JMenu editar;
+    private JMenuItem obscuro;
     private JLabel r1;
 
 
-    public IG() {
+    public calculadoraIMC_ES() {
         calcularButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,13 +32,4 @@ public class IG {
         });
     }
 
-    public static void main(String[] arg) {
-        JFrame frame1 = new JFrame("IG");
-        frame1.setContentPane(new IG().p1);
-        frame1.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        frame1.pack();
-        frame1.setSize(300, 300);
-        frame1.setLocationRelativeTo(null);
-        frame1.setVisible(true);
-    }
 }
