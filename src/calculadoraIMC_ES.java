@@ -1,8 +1,7 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 
 public class calculadoraIMC_ES extends JFrame{
     private JLabel peso;
@@ -17,7 +16,6 @@ public class calculadoraIMC_ES extends JFrame{
     private JMenu editar;
     private JMenuItem obscuro;
     private JLabel r1;
-
 
     public calculadoraIMC_ES() {
         calcularButton.addActionListener(new ActionListener() {
