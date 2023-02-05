@@ -10,11 +10,6 @@ public class calculadoraIMC_ES extends JFrame{
     private JButton calcularButton;
     private JLabel Altura;
     private JTextField textField1;
-    private JMenu archivo;
-    private JMenuItem guardar;
-    private JMenuItem cerrar;
-    private JMenu editar;
-    private JMenuItem obscuro;
     private JLabel r1;
 
     public calculadoraIMC_ES() {
