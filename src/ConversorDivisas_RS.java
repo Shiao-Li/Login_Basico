@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -33,6 +34,18 @@ public class ConversorDivisas_RS {
                 double convertido = OP.covertir();
 
                 resultado.setText(String.valueOf(convertido));
+            }
+        });
+        cerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        obscuro.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                divisasPanel.setBackground(Color.gray);
             }
         });
     }

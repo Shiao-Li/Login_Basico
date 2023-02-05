@@ -37,7 +37,7 @@ public class Login extends JFrame{
                         frame2.setVisible(true);
                         dispose();
 
-                    } else if (usuario.equals("erick12") || usuario.equals("erick.santillan@epn.edu.ec") && contraseña.equals("erik123")) {
+                    } else if (usuario.equals("erick.santillan@epn.edu.ec") || usuario.equals("erick12") && contraseña.equals("erick123")) {
                         JFrame frame2 = new JFrame("Perfil 2"); //Creaccion de un objeto que nos ayudara a utilizar las instancias del formulario 2
                         perfil_usuario_ES f2 = new perfil_usuario_ES();
 
@@ -49,7 +49,7 @@ public class Login extends JFrame{
                         frame2.pack();
                         frame2.setLocationRelativeTo(null);
                         frame2.setVisible(true);
-                        dispose();
+                        //dispose();
                     } else {
                         JOptionPane.showMessageDialog(null, "Su usuario o contraseña es incorrecto");
                     }
