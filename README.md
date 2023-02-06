@@ -3,7 +3,7 @@
 - Shiao Roberto
 - Santillan Erick
 
-Video explicativo del programa:  
+Video explicativo del programa: https://www.tiktok.com/@stalinestrada0/video/7196881220318350597 
 
 ### Frame principal del login
 ![image](https://user-images.githubusercontent.com/95731527/216852879-8518192a-c453-47a7-bf30-e2f4b2233511.png)
